@@ -34,3 +34,39 @@ footer {
     padding: 1em;
     text-align: center;
 }
+
+/* Example logo customization */
+.logo {
+    font-size: 2rem;
+    color: #007acc;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Article styling */
+article {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and footer tweaks */
+header {
+    background-color: #007acc;
+    color: white;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Optional: add a nice font globally */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
