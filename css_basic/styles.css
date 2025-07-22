@@ -1,0 +1,36 @@
+/* 1. Make the body a flex container in column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Optional: Ensures the full viewport height is used */
+    margin: 0;
+}
+
+/* 2. Make main a flex container in row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* allows main to grow and fill space between header/footer */
+}
+
+/* 3. Let article take 2/3 of space */
+article {
+    flex: 2;
+    overflow-y: auto; /* scrolls vertically if needed */
+    padding: 1em;
+}
+
+/* 4. Let aside take 1/3 of space */
+aside {
+    flex: 1;
+    overflow-y: auto; /* scrolls vertically if needed */
+    padding: 1em;
+}
+
+/* Optional: Styling for header and footer */
+header,
+footer {
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+}
