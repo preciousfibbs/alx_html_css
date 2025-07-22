@@ -70,3 +70,97 @@ footer {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Body font & general tone */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Header design */
+header {
+    background-color: #0e76a8; /* LinkedIn blue tone */
+    color: white;
+    padding: 1em 2em;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    gap: 2em;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-right: auto; /* pushes logo to the left */
+}
+
+/* Main content (article + aside) */
+main {
+    padding: 1.5em;
+    gap: 1.5em; /* space between article and aside */
+}
+
+/* Article box */
+article {
+    flex: 2;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+}
+
+/* Aside box */
+aside {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    overflow-y: auto;
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
+
+/* Links */
+a {
+    color: #0e76a8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive tweaks (optional) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 0.5em;
+    }
+}
