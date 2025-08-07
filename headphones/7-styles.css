@@ -1,0 +1,120 @@
+/* Smooth scrolling for nav links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation toggle styles (mobile responsive) */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav a {
+    padding: 1em;
+    border-bottom: 1px solid #333;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label + .nav {
+    display: flex;
+  }
+}
+
+/* Animate nav links */
+.nav a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+  transform: scale(1.1);
+  color: #ff4081;
+}
+
+/* Animate features (what we do) */
+.features .feature {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.features .feature:hover {
+  transform: translateY(-10px) scale(1.05);
+  opacity: 0.9;
+}
+
+/* Animate pentagons (our results) */
+.pentagon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 50px;
+}
+
+.pentagon {
+  width: 150px;
+  aspect-ratio: 1 / 1;
+  background: #f6325e;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  align-items: center center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  text-align: center center;
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+
+.pentagon-text .value {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.pentagon-text .label {
+  font-size: 0.75rem;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.pentagon:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.pentagon-text {
+  color: white;
+  text-align: center;
+}
+
+
+/* OUR RESULTS SECTION (VERTICAL FORMAT + RESPONSIVE) */
+.our-results {
+  background-image: url("images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 200px 20px 100px;
+}
